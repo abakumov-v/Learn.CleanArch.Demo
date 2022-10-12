@@ -1,4 +1,5 @@
 using CleanArch.Infra.Data.Context;
+using CleanArch.Infra.Ioc;
 using CleanArch.UI.Mvc.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +20,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddRazorPages();
+
+// Register our custom dependencies
+DependencyContainer.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
