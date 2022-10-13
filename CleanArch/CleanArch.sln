@@ -25,9 +25,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "Cle
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{CFFA2039-81B2-45D7-90FD-460C973064AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Infra.Ioc", "CleanArch.Infra.Ioc\CleanArch.Infra.Ioc.csproj", "{A349AA55-3962-4AD9-967D-D782114F03A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Ioc", "CleanArch.Infra.Ioc\CleanArch.Infra.Ioc.csproj", "{A349AA55-3962-4AD9-967D-D782114F03A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.UI.Mvc.Web", "CleanArch.UI.Mvc.Web\CleanArch.UI.Mvc.Web.csproj", "{6EF11B64-E455-4B6A-B61C-24A834F7140D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.UI.Mvc.Web", "CleanArch.UI.Mvc.Web\CleanArch.UI.Mvc.Web.csproj", "{6EF11B64-E455-4B6A-B61C-24A834F7140D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra.Bus", "Infra.Bus", "{441272DE-382B-4373-AFB0-8CC4E3B62699}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{F31EBA48-EA63-4500-969A-6E44C450C930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
