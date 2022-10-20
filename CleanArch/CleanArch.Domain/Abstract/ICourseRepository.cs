@@ -10,6 +10,6 @@ namespace CleanArch.Domain.Abstract
     public interface ICourseRepository
     {
         void Add(Course course);
-        IEnumerable<Course> GetCourses();
+        IQueryable<Course> GetCourses();
     }
 }

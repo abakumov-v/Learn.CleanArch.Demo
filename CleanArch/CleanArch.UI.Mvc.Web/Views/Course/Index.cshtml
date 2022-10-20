@@ -1,9 +1,9 @@
 ﻿@using CleanArch.Application.ViewModels
-@model CourseViewModel;
+@model IEnumerable<CourseViewModel>
 
 <div class="container body-content">
     <div class="row course-content">
-        @foreach (var course in Model.Courses)
+        @foreach (var course in Model)
         {
             <div class="course-image-container">
                 <div class="course-image" style="background-image:url(@course.ImageUrl)">
