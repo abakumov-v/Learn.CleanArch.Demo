@@ -1,5 +1,6 @@
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.Ioc;
+using CleanArch.UI.Mvc.Web.Configuration;
 using CleanArch.UI.Mvc.Web.Data;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -32,6 +33,7 @@ namespace CleanArch.UI.Mvc.Web
             // Register our custom dependencies
             DependencyContainer.RegisterServices(builder.Services);
             builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+            builder.Services.RegisterAutomapper();
 
             var app = builder.Build();
 

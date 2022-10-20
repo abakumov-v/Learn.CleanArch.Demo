@@ -1,3 +1,4 @@
+using CleanArch.Api.Configuration;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.Ioc;
 using MediatR;
@@ -26,6 +27,7 @@ builder.Services.AddSwaggerGen(e =>
 
 DependencyContainer.RegisterServices(builder.Services);
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.RegisterAutomapper();
 
 #endregion
 
